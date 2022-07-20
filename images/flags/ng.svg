@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="20" viewBox="0 0 28 20">
+    <defs>
+        <rect id="a" width="28" height="20" rx="2"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <rect width="27.5" height="19.5" x=".25" y=".25" stroke="#F5F5F5" stroke-width=".5" rx="2"/>
+        <path fill="#189B62" d="M18.667 0H28v20h-9.333zM0 0h9.333v20H0z" mask="url(#b)"/>
+    </g>
+</svg>
