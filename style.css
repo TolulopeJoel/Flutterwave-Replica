@@ -169,6 +169,58 @@ nav .button {
     padding: 15px 50px;
 }
 
+.nav-list li:first-child a:hover+.payment-dropdown{
+    display: block;
+}
+.nav-list li:nth-child(2) a:hover+.commerce-dropdown{
+    display: block;
+}
+
+.payment-dropdown, .commerce-dropdown {
+    display: none;
+    position: absolute;
+}
+
+.payment-dropdown-list, .commerce-dropdown-list {
+    top: 30px;
+    padding: 0;
+    z-index: 10;
+    position: relative;
+    border-radius: 10px;
+    padding: 15px 8px 25px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgb(0 0 0 / 20%);
+}
+
+.payment-dropdown-list .payment-list-item, .commerce-dropdown-list .commerce-list-item{
+    display: flex;
+    margin: 0;
+}
+
+.payment-icons {
+    width: 42px;
+    height: 42px;
+    margin-right: 14px;
+    display: inline;
+}
+
+.pay-text-container {
+    max-width: 220px;
+}
+
+.pay-text-container .link-title {
+    display: block;
+    color: #262c55;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+
+.link-desc {
+    font-size: 14px;
+}
+
 /* ----------------------------------------------------------------
                             HERO SECTION
 ---------------------------------------------------------------- */
@@ -1028,6 +1080,10 @@ footer .grid-container {
 
 #countryName {
     min-width: 113px;
+}
+
+#countryName::after {
+    content: url(./images/icons/expand.svg);
 }
 
 .country:hover {
